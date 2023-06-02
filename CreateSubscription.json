@@ -1,0 +1,41 @@
+curl --request POST \
+  --url https://api-uat.kushkipagos.com/subscriptions/v1/card \
+  --header 'Accept: application/json' \
+  --header 'Content-Type: application/json' \
+  --header 'Private-Merchant-Id: 985804863c39448bb30efe239b18f408' \
+  --data '{
+  "token": "2d221ec6027349d09c67c3c06f31b5f6",
+  "planName": "Premium",
+  "periodicity": "monthly",
+  "contactDetails": {
+    "documentType": "CC",
+    "documentNumber": "1009283738",
+    "email": "user@example.com",
+    "firstName": "Abner",
+    "lastName": "Vanegas",
+    "phoneNumber": "+593912345678"
+  },
+  "amount": {
+    "subtotalIva": 1,
+    "subtotalIva0": 0,
+    "ice": 0,
+    "iva": 0.14,
+    "currency": "USD"
+  },
+  "startDate": "2022-05-25",
+  "metadata": {
+    "plan": {
+      "fitness": {
+        "cardio": "include",
+        "rumba": "include",
+        "pool": "include"
+      }
+    }
+  }
+}'
+
+RESPONSE
+
+{
+  "subscriptionId": "1601594972296000"
+}

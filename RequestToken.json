@@ -1,0 +1,20 @@
+curl --request POST \
+  --url https://api-uat.kushkipagos.com/subscriptions/v1/card/tokens \
+  --header 'Accept: application/json' \
+  --header 'Content-Type: application/json' \
+  --header 'Public-Merchant-Id: 809758d720df4cf9bc7b2db2574b84fd' \
+  --data '{
+  "card": {
+    "name": "Abner Vanegas",
+    "number": "4242424242424242",
+    "expiryMonth": "03",
+    "expiryYear": "25",
+    "cvv": "071"
+  },
+  "currency": "USD"
+}'
+
+
+{
+  "token": "AbCDef123456Z7Ghi8901234jkLMNopQ"
+}

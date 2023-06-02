@@ -1,0 +1,37 @@
+curl --request GET \
+  --url https://api-uat.kushkipagos.com/subscriptions/v1/card/search/1601594972296000 \
+  --header 'Accept: application/json' \
+  --header 'Private-Merchant-Id: 985804863c39448bb30efe239b18f408'
+  
+ RESPONSE 
+  
+  {
+  "amount": {
+    "subtotalIva0": 30,
+    "ice": 0,
+    "currency": "USD",
+    "iva": 0,
+    "subtotalIva": 0
+  },
+  "bin": "545195",
+  "cardHolderName": "John Doe",
+  "cardType": "CREDIT",
+  "contactDetails": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "user@example.com"
+  },
+  "created": 1574693127,
+  "lastFourDigits": "5480",
+  "maskedCardNumber": "545195XXXXXX5480",
+  "merchantId": "20000000106212540000",
+  "metadata": {
+    "codeUser": "1",
+    "codeCompra": "d93d7a6"
+  },
+  "paymentBrand": "MASTERCARD",
+  "periodicity": "yearly",
+  "planName": "Standar",
+  "startDate": 1574726400,
+  "subscriptionId": "1574693127852000"
+}

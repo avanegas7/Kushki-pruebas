@@ -1,0 +1,25 @@
+curl --request POST \
+  --url https://api-uat.kushkipagos.com/subscriptions/v1/card/1601594972296000/authorize \
+  --header 'Accept: application/json' \
+  --header 'Content-Type: application/json' \
+  --header 'Private-Merchant-Id: 985804863c39448bb30efe239b18f408' \
+  --data '{
+  "amount": {
+    "ice": 0,
+    "iva": 0,
+    "subtotalIva": 0,
+    "subtotalIva0": 600,
+    "currency": "MXN"
+  },
+  "name": "John",
+  "lastName": "Doe",
+  "email": "user@example.com",
+  "fullResponse": "v2"
+}'
+
+RESPONSE 
+
+{
+  "ticketNumber": "627388610047090811",
+  "transactionReference": "998ba5fd-e590-4615-a84a-83b734437c57"
+}
